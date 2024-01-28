@@ -1,5 +1,6 @@
 import logo from './logo-white.png';
 import './App.css';
+import Shares from './components/shares/Shares';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
           Lauching Soon.
         </p>
       </header>
+      <body>
+        <Shares />
+      </body>
     </div>
   );
 }
