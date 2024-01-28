@@ -2,7 +2,7 @@
   "homepage": "https://www.sergioverissimo.com",
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@testing-library/jest-dom": "^5.17.0",
