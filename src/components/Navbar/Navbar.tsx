@@ -1,6 +1,10 @@
 import { Anchor, ConfigProvider } from "antd";
 import HomePage from "../../pages/HomePage/HomePage";
 import styles from "./Navbar.module.css";
+import ContactPage from "../../pages/ContactPage/ContactPage";
+import AboutPage from "../../pages/AboutPage/AboutPage";
+import ExperiencePage from "../../pages/ExperiencePage/ExperiencePage";
+import ProjectsPage from "../../pages/ProjectsPage/ProjectsPage";
 
 export default function NavBar() {
   return (
@@ -8,74 +12,58 @@ export default function NavBar() {
       <div
         style={{ padding: "20px", display: "flex", justifyContent: "center" }}
       >
-        <ConfigProvider
+        {/* <ConfigProvider
           theme={{
             token: {
               // Seed Token
-             
-              colorText:"white",
+
+              colorText: "white",
               fontSize: 24,
             },
           }}
-        >
-          <Anchor
-            // className={styles.navbar}
-            style={{ color: "white", width: "100vw", }}
-            direction="horizontal"
-            affix={true}
-            // showInkInFixed={true}
-            items={[
-              {
-                key: "home",
-                href: "#home",
-                title: "// home",
-              },
-              {
-                key: "expertise",
-                href: "#expertise",
-                title: "// expertise",
-              },
-              {
-                key: "experience",
-                href: "#experience",
-                title: "// experience",
-              },
-              {
-                key: "contact",
-                href: "#contact",
-                title: "// contact",
-              },
-            ]}
-          />
-        </ConfigProvider>
+        > */}
+        <Anchor
+          className={styles.navbar}
+          direction="horizontal"
+          affix={true}
+          // showInkInFixed={true}
+          offsetTop={100}
+          items={[
+            {
+              key: "home",
+              href: "#home",
+              title: "// home",
+            },
+            {
+              key: "about",
+              href: "#about",
+              title: "// about me",
+            },
+            {
+              key: "projects",
+              href: "#projects",
+              title: "// projects",
+            },
+            {
+              key: "experience",
+              href: "#experience",
+              title: "// experience",
+            },
+            {
+              key: "contact",
+              href: "#contact",
+              title: "// contact",
+            },
+          ]}
+        />
+        {/* </ConfigProvider> */}
       </div>
       <div>
-        <HomePage />
-
-        <div
-          id="expertise"
-          style={{
-            width: "100vw",
-            height: "99.9vh",
-            textAlign: "center",
-          }}
-        />
-        <div
-          id="experience"
-          style={{
-            width: "100vw",
-            height: "99.9vh",
-            textAlign: "center",
-          }}
-        />
-        <div
-          id="contact"
-          style={{
-            width: "100vw",
-            height: "99.9vh",
-            textAlign: "center",
-          }}
-        />
+        <HomePage/>
+        <AboutPage />
+        <ProjectsPage />
+        <ExperiencePage />
+        <ContactPage />
       </div>
     </div>
   );
