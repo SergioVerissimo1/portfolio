@@ -1,5 +1,6 @@
 import Page from "../../components/Page/Page";
-import styles from "./ContactPage.module.css";
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ContactPage = () => {
   return (
@@ -11,6 +12,7 @@ const ContactPage = () => {
             Feel free to contact me by sending me an email and I will get back
             to you as soon as possible.
           </p>
+          <FontAwesomeIcon icon={faLinkedin} />
         </div>
       }
     />

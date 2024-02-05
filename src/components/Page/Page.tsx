@@ -7,7 +7,6 @@ const Page = (props: { id: string; content: ReactElement }) => {
       id={id}
       style={{
         width: "100vw",
-        marginTop: "12vh",
         height: "99.9vh",
         textAlign: "center",
       }}

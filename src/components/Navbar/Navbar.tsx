@@ -8,26 +8,17 @@ import ProjectsPage from "../../pages/ProjectsPage/ProjectsPage";
 
 export default function NavBar() {
   return (
-    <div className={styles.body}>
-      <div
-        style={{ padding: "20px", display: "flex", justifyContent: "center" }}
-      >
-        {/* <ConfigProvider
-          theme={{
-            token: {
-              // Seed Token
-
-              colorText: "white",
-              fontSize: 24,
-            },
-          }}
-        > */}
+    <div style={{ backgroundColor: "#282c34" }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <Anchor
-          className={styles.navbar}
+          style={{
+            fontWeight: "bold",
+            marginTop: "20px",
+          }}
           direction="horizontal"
           affix={true}
           // showInkInFixed={true}
-          offsetTop={100}
+          targetOffset={500}
           items={[
             {
               key: "home",
@@ -56,10 +47,9 @@ export default function NavBar() {
             },
           ]}
         />
-        {/* </ConfigProvider> */}
       </div>
       <div>
-        <HomePage/>
+        <HomePage />
         <AboutPage />
         <ProjectsPage />
         <ExperiencePage />
