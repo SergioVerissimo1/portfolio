@@ -12,7 +12,7 @@ const ContactPage = () => {
             Feel free to contact me by sending me an email and I will get back
             to you as soon as possible.
           </p>
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faBrands} />
         </div>
       }
     />
