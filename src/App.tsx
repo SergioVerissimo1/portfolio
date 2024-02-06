@@ -7,7 +7,6 @@ const App = () => (
     theme={{
       token: {
         // Seed Token
-
         colorText: "white",
         fontSize: 24,
       },

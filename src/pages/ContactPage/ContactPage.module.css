@@ -18,3 +18,15 @@
     justify-content: center;
     color: "white",
 }
+
+
+.icon {
+    font-size: 50pt;
+    margin-bottom: 1rem;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.icon:hover {
+    font-size: 55pt;
+}
