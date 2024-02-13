@@ -10,6 +10,12 @@ const App = () => (
         colorText: "white",
         fontSize: 24,
       },
+      components: {
+        Anchor: {
+          colorBgTextActive: "white",
+          colorBgTextHover: "white",
+        }
+      }
     }}
   >
     <NavBar />

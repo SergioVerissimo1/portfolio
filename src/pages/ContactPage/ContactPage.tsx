@@ -5,18 +5,51 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./ContactPage.module.css";
 
 const ContactPage = () => {
+  const redirectTo = (url: string) => window.open(url, "_blank");
   return (
     <Page
       id="contact"
       content={
-        <div>
-          <p>
-            Feel free to contact me by sending me an email and I will get back
-            to you as soon as possible.
-          </p>
-          <div style={{ display: "flex", justifyContent: "space-between", width:"300px" }}>
-            <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
-            <FontAwesomeIcon className={styles.icon} icon={faGithub} />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+        >
+          <div>
+            <h1 className={styles.title}>Contacts</h1>
+          </div>
+          <div>
+            <p className={styles.subtitle}>
+              Feel free to contact me by sending me an email and I will get back
+              to you as soon as possible.
+            </p>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "300px",
+              alignItems: "center",
+              marginTop: "120px",
+            }}
+          >
+            <FontAwesomeIcon
+              className={styles.icon}
+              icon={faLinkedin}
+              onClick={() =>
+                redirectTo(
+                  "https://www.linkedin.com/in/s%C3%A9rgio-ver%C3%ADssimo-1bb652192/"
+                )
+              }
+            />
+            <FontAwesomeIcon
+              className={styles.icon}
+              icon={faGithub}
+              onClick={() => redirectTo("https://github.com/SergioVerissimo1")}
+            />
             <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />
           </div>
         </div>

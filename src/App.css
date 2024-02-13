@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('./fonts/Aliens-Among-Us.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('./fonts/Aliens-Among-Us.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+} 
+
 .App {
   text-align: center;
 }
