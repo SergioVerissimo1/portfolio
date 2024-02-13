@@ -1,4 +1,5 @@
 import Page from "../../components/Page/Page";
+import PageTitle from "../../components/PageTitle/PageTitle";
 import styles from "./ProjectsPage.module.css";
 
 const ProjectsPage = () => {
@@ -6,8 +7,17 @@ const ProjectsPage = () => {
     <Page
       id="projects"
       content={
-        <div>
-         
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+        >
+          <div>
+            <PageTitle title="Projects" />
+          </div>
         </div>
       }
     />

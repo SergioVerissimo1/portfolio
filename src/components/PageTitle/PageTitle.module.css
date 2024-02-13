@@ -1,0 +1,10 @@
+.title {
+    font-size: 50pt;
+    margin-bottom: 1rem;
+    font-family: MyWebFont;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid orange;
+    text-transform: uppercase;
+  }
