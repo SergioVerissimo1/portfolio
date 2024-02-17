@@ -6,9 +6,9 @@ import styles from "./ContactPage.module.css";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import { Overlay } from "react-bootstrap";
 import { useRef, useState } from "react";
+import { redirectTo } from "../../utils";
 
 const ContactPage = () => {
-  const redirectTo = (url: string) => window.open(url, "_blank");
   const [show, setShow] = useState(false);
   const target = useRef(null);
 
