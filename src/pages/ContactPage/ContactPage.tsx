@@ -4,9 +4,14 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./ContactPage.module.css";
 import PageTitle from "../../components/PageTitle/PageTitle";
+import { Overlay } from "react-bootstrap";
+import { useRef, useState } from "react";
 
 const ContactPage = () => {
   const redirectTo = (url: string) => window.open(url, "_blank");
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
+
   return (
     <Page
       id="contact"
@@ -22,7 +27,7 @@ const ContactPage = () => {
           <div>
             <PageTitle title="Contact" />
           </div>
-          <div style={{width: '1000px'}}>
+          <div style={{ width: "1000px" }}>
             <p className={styles.subtitle}>
               Feel free to contact me by sending me an email and I will get back
               to you as soon as possible.
@@ -51,7 +56,44 @@ const ContactPage = () => {
               icon={faGithub}
               onClick={() => redirectTo("https://github.com/SergioVerissimo1")}
             />
-            <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />
+            <FontAwesomeIcon
+              ref={target}
+              className={styles.icon}
+              icon={faEnvelope}
+              onClick={() => {
+                navigator.clipboard.writeText(
+                  "sergio_verissimo_123@hotmail.com"
+                );
+                setShow(true);
+                const timeoutId = setTimeout(() => setShow(false), 1000);
+                // Cleanup function to clear the timeout if the component unmounts
+                return () => clearTimeout(timeoutId);
+              }}
+            />
+            <Overlay target={target.current} show={show} placement="top">
+              {({
+                placement: _placement,
+                arrowProps: _arrowProps,
+                show: _show,
+                popper: _popper,
+                hasDoneInitialMeasure: _hasDoneInitialMeasure,
+                ...props
+              }) => (
+                <div
+                  {...props}
+                  style={{
+                    position: "absolute",
+                    backgroundColor: "orange",
+                    padding: "5px 10px",
+                    color: "white",
+                    borderRadius: 3,
+                    ...props.style,
+                  }}
+                >
+                  Copied to clipboard!
+                </div>
+              )}
+            </Overlay>
           </div>
         </div>
       }
