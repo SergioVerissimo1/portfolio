@@ -6,11 +6,11 @@ const Page = (props: { id: string; content: ReactElement }) => {
     <section
       id={id}
       style={{
-        width: "100%",
-        height: "90vh",
+        width: "100vw",
+        height: "100vh",
         textAlign: "center",
         border: "1px solid blue",
-        marginTop: "78px",
+        paddingTop: "80px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

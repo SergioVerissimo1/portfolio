@@ -1,9 +1,11 @@
-.link, .link_active {
+.link,
+.link_active {
   color: white !important;
-  font-size: 30px !important;
+  font-size: 16pt !important;
   /* font-weight: bold !important; */
   font-family: MyWebFont;
   text-transform: uppercase !important;
+  padding: 10px 20px !important;
 }
 
 .link_active {

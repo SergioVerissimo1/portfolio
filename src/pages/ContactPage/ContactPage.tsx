@@ -20,7 +20,7 @@ const ContactPage = () => {
           }}
         >
           <div>
-            <PageTitle title="Contacts" />
+            <PageTitle title="Contact" />
           </div>
           <div style={{width: '1000px'}}>
             <p className={styles.subtitle}>

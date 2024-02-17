@@ -12,7 +12,7 @@ export default function NavBarLink(props: { name: string; id: string }) {
       onMouseEnter={() => setActive(styles.link_active)}
       onMouseLeave={() => setActive(styles.link)}
     >
-      {name}
+      ./{name}
     </Nav.Link>
   );
 }
