@@ -1,8 +1,10 @@
-export const particlesConfig = {
+import { IOptions, RecursivePartial } from "@tsparticles/engine";
+
+export const ParticlesConfig: RecursivePartial<IOptions> = {
   autoPlay: true,
   background: {
     color: {
-      value: "#0d47a1",
+      value: "#000000",
     },
     image: "",
     position: "50% 50%",
@@ -25,7 +27,7 @@ export const particlesConfig = {
   delay: 0,
   fullScreen: {
     enable: true,
-    zIndex: 0,
+    zIndex: -1,
   },
   detectRetina: true,
   duration: 0,

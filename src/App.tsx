@@ -8,30 +8,25 @@ import type { Container, Engine } from "@tsparticles/engine";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import Background from "./components/Background/Background";
+import HomePage from "./pages/HomePage/HomePage";
+import ContactPage from "./pages/ContactPage/ContactPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import ExperiencePage from "./pages/ExperiencePage/ExperiencePage";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import "bootstrap/dist/css/bootstrap.min.css";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const App = () => {
   return (
-    <>
-      <Background content={<></>} />
-      <ConfigProvider
-        theme={{
-          token: {
-            // Seed Token
-            colorText: "white",
-            fontSize: 24,
-          },
-          components: {
-            Anchor: {
-              colorBgTextActive: "white",
-              colorBgTextHover: "white",
-            },
-          },
-        }}
-      >
-        <NavBar />
-      </ConfigProvider>
-    </>
+    <div className="App">
+      {/* <Background /> */}
+      <NavBar />
+      <HomePage />
+      <AboutPage />
+      <ExperiencePage />
+      <ProjectsPage />
+      <ContactPage />
+    </div>
   );
 };
 

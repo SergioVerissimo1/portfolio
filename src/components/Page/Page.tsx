@@ -3,17 +3,22 @@ import { ReactElement } from "react";
 const Page = (props: { id: string; content: ReactElement }) => {
   const { id, content } = props;
   return (
-    <div
+    <section
       id={id}
       style={{
-        width: "99.9vw",
+        width: "100%",
         height: "90vh",
         textAlign: "center",
-        border: "1px solid red",
+        border: "1px solid blue",
+        marginTop: "78px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        zIndex: 1,
       }}
     >
       {content}
-    </div>
+    </section>
   );
 };
 export default Page;
