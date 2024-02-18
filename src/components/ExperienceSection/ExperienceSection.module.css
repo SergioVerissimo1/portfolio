@@ -1,0 +1,62 @@
+.header,
+.body {
+  width: 50vw;
+  padding: 15px;
+  font-family: MyWebFont;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.header {
+  display: flex;
+  background-color: orange;
+  color: white !important;
+  /* font-weight: bold !important; */
+  /* font-size: 16pt; */
+}
+.body {
+  background-color: white;
+  color: black;
+  font-size: 12pt;
+}
+.title,
+.period {
+  font-family: MyWebFont;
+  font-size: 12pt !important;
+  color: white;
+  font-weight: bold;
+}
+.title {
+  width: 75%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.period {
+  width: 20%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggleButton {
+  width: 5%;
+  font-size: 14pt;
+  font-weight: normal !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+.toggleButton:hover {
+  cursor: pointer;
+}
+.website:hover {
+  color: orange;
+  cursor: pointer;
+}
+.icon {
+  margin-right: 7px;
+  color: orange;
+}
