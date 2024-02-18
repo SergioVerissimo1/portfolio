@@ -5,7 +5,8 @@
   color: white !important;
   padding: 20px;
 }
-
-.body {
-  background-color: #282c34;
+.background {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
 }

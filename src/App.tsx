@@ -15,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const App = () => {
   return (
     <div className="App">
-      {/* <Background /> */}
+      <Background />
       <NavBar />
       <HomePage />
       <AboutPage />

@@ -2,6 +2,7 @@ import { ReactElement, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { ParticlesConfig } from "./ParticlesConfig";
+import styles from "./Background.module.css";
 
 export default function Background() {
   const [init, setInit] = useState(false);
@@ -20,13 +21,14 @@ export default function Background() {
       setInit(true);
     });
   }, []);
-  return (
-    init ? (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={async (container) => console.log(container)}
-        options={ParticlesConfig}
-      />
-    ) : <></>
+  return init ? (
+    <Particles
+      id="tsparticles"
+      className={styles.background}
+      particlesLoaded={async (container) => console.log(container)}
+      options={ParticlesConfig}
+    />
+  ) : (
+    <></>
   );
 }

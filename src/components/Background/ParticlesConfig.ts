@@ -4,7 +4,7 @@ export const ParticlesConfig: RecursivePartial<IOptions> = {
   autoPlay: true,
   background: {
     color: {
-      value: "#000000",
+      value: "#282c34",
     },
     image: "",
     position: "50% 50%",
