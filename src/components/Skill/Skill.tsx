@@ -1,4 +1,3 @@
-import styles from "./Skill.module.css";
 import { Image } from "react-bootstrap";
 
 const Skill = (props: { name: string; imageSrc: string }) => {
@@ -6,22 +5,29 @@ const Skill = (props: { name: string; imageSrc: string }) => {
   return (
     <div
       style={{
-        textAlign: "right",
-        marginTop: "10px",
-        // marginBottom: "10px",
-        width: "15%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <Image
         src={imageSrc}
         style={{
-          width: "100px",
-          height: "100px",
+          width: "50px",
+          height: "50px",
           objectFit: "contain",
         }}
         rounded
       />
-      <p>{name}</p>
+      <p
+        style={{
+          color: "white",
+          fontFamily: "MyWebFont",
+          textAlign: "center",
+        }}
+      >
+        {name}
+      </p>
     </div>
   );
 };
