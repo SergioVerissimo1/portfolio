@@ -4,6 +4,7 @@
   font-family: MyWebFont;
   letter-spacing: 5px;
   color: white;
+  text-shadow: 2px 2px 0px orange;
 }
 
 .subtitle {
