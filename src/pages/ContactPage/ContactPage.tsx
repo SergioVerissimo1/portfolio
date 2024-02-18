@@ -1,17 +1,20 @@
 import Page from "../../components/Page/Page";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./ContactPage.module.css";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import { Overlay } from "react-bootstrap";
 import { useRef, useState } from "react";
 import { redirectTo } from "../../utils";
+import ScrollToTop from "react-scroll-to-top";
 
 const ContactPage = () => {
   const [show, setShow] = useState(false);
   const target = useRef(null);
-
+  const sendTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <Page
       id="contact"
@@ -95,6 +98,11 @@ const ContactPage = () => {
               )}
             </Overlay>
           </div>
+          <ScrollToTop
+            smooth
+            style={{ color: "orange", borderRadius: "100px" }}
+            component={<FontAwesomeIcon icon={faArrowUp} />}
+          />
         </div>
       }
     />
