@@ -21,14 +21,12 @@ export default function Background() {
       setInit(true);
     });
   }, []);
-  return init ? (
+  return (
     <Particles
       id="tsparticles"
       className={styles.background}
       particlesLoaded={async (container) => console.log(container)}
       options={ParticlesConfig}
     />
-  ) : (
-    <></>
   );
 }
