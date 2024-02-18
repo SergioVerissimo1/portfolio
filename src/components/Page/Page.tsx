@@ -9,7 +9,7 @@ const Page = (props: { id: string; content: ReactElement }) => {
         width: "100vw",
         height: "100vh",
         textAlign: "center",
-        border: "1px solid blue",
+        // border: "1px solid blue",
         paddingTop: "80px",
         display: "flex",
         justifyContent: "center",
