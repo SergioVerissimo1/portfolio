@@ -17,9 +17,10 @@ export default function Background() {
       //await loadFull(engine);
       await loadSlim(engine);
       //await loadBasic(engine);
-    }).then(() => {
-      setInit(true);
     });
+    // .then(() => {
+    //   setInit(true);
+    // });
   }, []);
   return (
     <Particles
