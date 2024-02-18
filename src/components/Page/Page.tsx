@@ -14,7 +14,7 @@ const Page = (props: { id: string; content: ReactElement }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        zIndex: 1,
+        zIndex: 100,
       }}
     >
       {content}

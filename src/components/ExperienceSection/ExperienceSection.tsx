@@ -21,36 +21,41 @@ const ExperienceSection = (props: {
   description: string;
   tecnologies: string[];
   open?: boolean;
+  onClick?: (eventKey: string) => void;
 }) => {
-  const { title, period, address, website, description, tecnologies } = props;
+  const {
+    eventKey,
+    title,
+    period,
+    address,
+    website,
+    description,
+    tecnologies,
+    open,
+    onClick,
+  } = props;
   const [toggleButton, setToggleButton] = useState<IconDefinition>(faPlus);
-  const [open, setOpen] = useState(props.open ?? false);
+  // const [open, setOpen] = useState(props.open ?? false);
+  const onToggle = () => {
+    setToggleButton(toggleButton === faPlus ? faMinus : faPlus);
+    // setOpen(!open);
+    if (onClick) onClick(eventKey);
+  };
   return (
-    // <Accordion.Item eventKey={eventKey}>
-    //   <Accordion.Header className={styles.accordionHeader}>
-    //     <div style={{ width: "75%" }}>{title}</div>
-    //     <div style={{ width: "25%" }}>{period}</div>
-    //   </Accordion.Header>
-    //   <Accordion.Body className={styles.accordionBody}>
-    //     <div>{description}</div>
-    //     <div>
-    //       {tecnologies.map((tecnology) => (
-    //         <Tag content={tecnology} />
-    //       ))}
-    //     </div>
-    //   </Accordion.Body>
-    // </Accordion.Item>
-    <div style={{display:"flex", justifyContent: 'center', flexDirection="row"}}>
-      <div className={styles.header}>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      <div className={styles.header} onClick={onToggle}>
         <div className={styles.title}>{title}</div>
         <div className={styles.period}>{period}</div>
         <FontAwesomeIcon
           className={styles.toggleButton}
           icon={toggleButton}
-          onClick={() => {
-            setToggleButton(toggleButton == faPlus ? faMinus : faPlus);
-            setOpen(!open);
-          }}
+          onClick={onToggle}
         />
       </div>
       <Collapse in={open} timeout={2000}>
@@ -73,10 +78,20 @@ const ExperienceSection = (props: {
               </span>
             </div>
           </div>
-          <div>{description}</div>
-          {tecnologies.map((tecnology) => (
-            <Tag content={tecnology} />
-          ))}
+          <div
+            style={{
+              textAlign: "left",
+              marginTop: "10px",
+              marginBottom: "10px",
+            }}
+          >
+            {description}
+          </div>
+          <div style={{ textAlign: "left" }}>
+            {tecnologies.map((tecnology) => (
+              <Tag content={tecnology} />
+            ))}
+          </div>
         </div>
       </Collapse>
     </div>
