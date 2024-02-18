@@ -25,7 +25,7 @@ export default function Background() {
     <Particles
       id="tsparticles"
       className={styles.background}
-      particlesLoaded={async (container) => console.log(container)}
+      // particlesLoaded={async (container) => console.log(container)}
       options={ParticlesConfig}
     />
   );
