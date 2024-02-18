@@ -88,8 +88,8 @@ const ExperienceSection = (props: {
             {description}
           </div>
           <div style={{ textAlign: "left" }}>
-            {tecnologies.map((tecnology) => (
-              <Tag content={tecnology} />
+            {tecnologies.map((tecnology, index) => (
+              <Tag key={index} content={tecnology} />
             ))}
           </div>
         </div>
