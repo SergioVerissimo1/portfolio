@@ -49,7 +49,6 @@ const AboutPage = () => {
                 />
                 <Skill imageSrc="../../../logos-about/html5.svg" name="HTML5" />
                 <Skill imageSrc="../../../logos-about/css3.svg" name="CSS3" />
-                <Skill imageSrc="../../../logos-about/postman.svg" name="Postman" />
               </div>
               <div className={styles.skillsRow}>
                 {/* <Skill imageSrc="../../../logos-about/bootstrap.svg" name="Bootstrap" />
@@ -73,7 +72,28 @@ const AboutPage = () => {
                 />
                 <Skill imageSrc="../../../logos-about/agile.svg" name="Agile" />
                 <Skill imageSrc="../../../logos-about/php.svg" name="PHP" />
-                <Skill imageSrc="../../../logos-about/flutter.svg" name="Flutter" />
+                <Skill
+                  imageSrc="../../../logos-about/flutter.svg"
+                  name="Flutter"
+                />
+              </div>
+              <div className={styles.skillsRow}>
+                <Skill
+                  imageSrc="../../../logos-about/postman.svg"
+                  name="Postman"
+                />
+                <Skill
+                  imageSrc="../../../logos-about/angular.svg"
+                  name="Angular"
+                />
+                <Skill
+                  imageSrc="../../../logos-about/nodejs.svg"
+                  name="Node.js"
+                />
+                <Skill
+                  imageSrc="../../../logos-about/aspnet.svg"
+                  name="ASP.net"
+                />
               </div>
             </div>
           </div>
