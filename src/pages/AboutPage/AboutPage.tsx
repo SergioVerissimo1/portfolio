@@ -19,11 +19,11 @@ const AboutPage = () => {
           <div>
             <PageTitle title="About Me" />
           </div>
-          <div style={{ display: "flex", flexDirection: "row", width: "80vw" }}>
+          <div style={{ display: "flex", flexDirection: "row", width: "60vw" }}>
             <div
               style={{
                 textAlign: "left",
-                width: "50%",
+                width: "70%",
                 color: "white",
                 fontFamily: "MyWebFont",
               }}
@@ -36,7 +36,7 @@ const AboutPage = () => {
             </div>
             <div
               style={{
-                width: "50%",
+                width: "25%",
                 display: "flex",
                 flexDirection: "column",
               }}
