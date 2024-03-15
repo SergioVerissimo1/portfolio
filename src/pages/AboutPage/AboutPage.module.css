@@ -1,6 +1,22 @@
 .skillsRow {
-  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 1rem;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.paragraph {
+  text-align: justify !important;
+  color: white !important;
+  font-family: MyWebFont !important;
+}
+/* .paragraph:first {
+  margin-top: "1rem";
+} */
