@@ -8,6 +8,7 @@ const Skill = (props: { name: string; imageSrc: string }) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        padding: "1rem",
       }}
     >
       <Image
