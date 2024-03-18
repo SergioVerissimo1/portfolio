@@ -11,3 +11,10 @@
 .link_active {
   color: orange !important;
 }
+
+@media screen and (max-width: 768px) {
+  .link,
+  .link_active {
+    font-size: 10pt !important;
+  }
+}
