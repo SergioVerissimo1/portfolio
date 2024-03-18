@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <Navbar expand="lg" fixed="top" className={styles.navbar}>
       <Container>
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.navbarToggle}/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
             <NavBarLink name="Home" id="#home" />
