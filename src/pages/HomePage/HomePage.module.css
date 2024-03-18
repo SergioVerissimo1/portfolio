@@ -48,11 +48,15 @@
   margin-right: 10px;
 }
 
-
-.row{
+.row {
   width: 100%;
-  
+
   margin-top: 40px;
   border: 1px solid red;
-  
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 45pt;
+  }
 }
