@@ -21,6 +21,7 @@ const AboutPage = () => {
           </div>
           <div className={styles.aboutContainer}>
             <div className={styles.textContainer}>
+              <h3>Get to know me!</h3>
               <p className={styles.paragraph}>
                 I'm Sérgio Veríssimo, a full-stack Web Developer based in
                 Sesimbra, Portugal. I'm passionate about creating beautiful,
@@ -32,6 +33,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className={styles.skillsContainer}>
+              <h3>Skills</h3>
               <Skill imageSrc="../../../logos-about/react.svg" name="React" />
               <Skill
                 imageSrc="../../../logos-about/nextjs.svg"
