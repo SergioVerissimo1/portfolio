@@ -1,3 +1,6 @@
+.subtitleContainer {
+  width: 50vw;
+}
 .subtitle {
   font-size: 14pt;
   margin-bottom: 1rem;
@@ -30,13 +33,28 @@
   color: orange;
 }
 
+.iconsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 17vw;
+  align-items: center;
+  margin-top: 5vh;
+}
+
 @media screen and (max-width: 768px) {
   .body {
     width: 90vw;
   }
+  .subtitleContainer {
+    width: 90vw;}
   .subtitle {
     font-size: 12pt;
+    text-align: justify;
   }
   .icon {
-    font-size: 40pt;}
+    font-size: 40pt;
+  }
+  .iconsContainer {
+    width: 60vw;
+  }
 }

@@ -36,15 +36,7 @@ const ContactPage = () => {
               to you as soon as possible.
             </p>
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              width: "300px",
-              alignItems: "center",
-              marginTop: "120px",
-            }}
-          >
+          <div className={styles.iconsContainer}>
             <FontAwesomeIcon
               className={styles.icon}
               icon={faLinkedin}
