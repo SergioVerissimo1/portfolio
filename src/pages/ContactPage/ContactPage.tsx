@@ -30,7 +30,7 @@ const ContactPage = () => {
           <div>
             <PageTitle title="Contact" />
           </div>
-          <div style={{ width: "1000px" }}>
+          <div className={styles.subtitleContainer}>
             <p className={styles.subtitle}>
               Feel free to contact me by sending me an email and I will get back
               to you as soon as possible.
