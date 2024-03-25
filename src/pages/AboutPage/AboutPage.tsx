@@ -1,6 +1,7 @@
 import Page from "../../components/Page/Page";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import Skill from "../../components/Skill/Skill";
+import Subtitle from "../../components/Subtitle/Subtitle";
 import styles from "./AboutPage.module.css";
 
 const AboutPage = () => {
@@ -21,7 +22,7 @@ const AboutPage = () => {
           </div>
           <div className={styles.aboutContainer}>
             <div className={styles.textContainer}>
-              <h3>Get to know me!</h3>
+              <Subtitle subtitle="Get to know me!" />
               <p className={styles.paragraph}>
                 I'm Sérgio Veríssimo, a full-stack Web Developer based in
                 Sesimbra, Portugal. I'm passionate about creating beautiful,
@@ -33,7 +34,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className={styles.skillsContainer}>
-              <h3>Skills</h3>
+              <Subtitle subtitle="My Skills" />
               <Skill imageSrc="../../../logos-about/react.svg" name="React" />
               <Skill
                 imageSrc="../../../logos-about/nextjs.svg"
