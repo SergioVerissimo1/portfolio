@@ -71,6 +71,7 @@ const ProjectSection = (props: {
         display: "flex",
         alignItems: "center",
         flexDirection: "row",
+        justifyContent: "space-between",
       }}
     >
       {orientation === "left" ? (
@@ -79,9 +80,9 @@ const ProjectSection = (props: {
         <div className={styles.right}>{image}</div>
       )}
       {orientation === "right" ? (
-        <div className={styles.left}>{content}</div>
+        <div className={styles.right}>{content}</div>
       ) : (
-        <div className={styles.right}>{image}</div>
+        <div className={styles.left}>{image}</div>
       )}
     </div>
   );

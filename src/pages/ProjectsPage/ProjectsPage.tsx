@@ -40,7 +40,7 @@ const ProjectsPage = () => {
           />
           <ProjectSection
             eventKey="1"
-            title="Social Travel"
+            title="SocialTravel"
             description="Social network for travelers to share their experiences and travel tips."
             tecnologies={["Angular", "ASP.net", "SQL"]}
             imageSrc="../../../logos-projects/SocialTravel.png"
