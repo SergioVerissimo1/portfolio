@@ -38,8 +38,8 @@ const ProjectSection = (props: {
     <Image
       src={imageSrc}
       style={{
-        width: "100px",
-        height: "100px",
+        width: "1000px",
+        height: "1000px",
         objectFit: "contain",
       }}
       // rounded
