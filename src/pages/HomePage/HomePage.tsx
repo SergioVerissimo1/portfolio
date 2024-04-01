@@ -9,17 +9,31 @@ const HomePage = () => (
     id="home"
     content={
       <div>
-        <h1 className={styles.title}>SÉRGIO VERÍSSIMO</h1>
+        <h1 className={styles.title}>
+          SÉRGI
+          <span
+            onDoubleClick={(e) => {
+              // e.preventDefault;
+              console.log("HELLO");
+            }}
+          >
+            O
+          </span>{" "}
+          VERÍSSIMO
+        </h1>
         <h3 className={styles.subtitle}>
-        <ReactTyped
+          <ReactTyped
             strings={["SOFTWARE ENGINEER, FRONT END AND APP DEVELOPER."]}
             typeSpeed={100}
             cursorChar="/"
             startWhenVisible
           />
         </h3>
-         
-        <button className={styles.button}><FontAwesomeIcon className={styles.icon} icon={faDownload} />RESUME</button>
+
+        <button className={styles.button}>
+          <FontAwesomeIcon className={styles.icon} icon={faDownload} />
+          RESUME
+        </button>
       </div>
     }
   />

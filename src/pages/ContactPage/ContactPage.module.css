@@ -1,33 +1,59 @@
-
-
+.subtitleContainer {
+  width: 50vw;
+}
 .subtitle {
-    font-size: 14pt;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
-    font-family: MyWebFont;
-    color: white;
-    margin-top: 30px;
-    line-height: 35px;
+  font-size: 14pt;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  font-family: MyWebFont;
+  color: white;
+  line-height: 35px;
+  word-wrap: normal;
 }
 
 .body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: "white",
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: "white";
 }
 
-
 .icon {
-    font-size: 50pt;
-    margin-bottom: 1rem;
-    font-family:  Arial, Helvetica, sans-serif;
-    color: white;
+  font-size: 50pt;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 .icon:hover {
-    margin-bottom: 5px;
-    transition: all 0.3s linear;
-    cursor: pointer;
-    color:orange;
+  margin-bottom: 5px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  color: orange;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 17vw;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    width: 90vw;
+  }
+  .subtitleContainer {
+    width: 90vw;}
+  .subtitle {
+    font-size: 12pt;
+    text-align: justify;
+  }
+  .icon {
+    font-size: 40pt;
+  }
+  .iconsContainer {
+    width: 60vw;
+  }
 }

@@ -1,14 +1,12 @@
-import { Collapse } from "react-bootstrap";
+import { Collapse, Image } from "react-bootstrap";
 import styles from "./ExperienceSection.module.css";
 import Tag from "../Tag/Tag";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
   faPlus,
   faMinus,
   faSquareArrowUpRight,
-  IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 import { redirectTo } from "../../utils";
 
@@ -21,6 +19,7 @@ const ExperienceSection = (props: {
   description: string;
   tecnologies: string[];
   open?: boolean;
+  imageSrc: string;
   onClick?: (eventKey: string) => void;
 }) => {
   const {
@@ -32,15 +31,12 @@ const ExperienceSection = (props: {
     description,
     tecnologies,
     open,
+    imageSrc,
     onClick,
   } = props;
-  const [toggleButton, setToggleButton] = useState<IconDefinition>(faPlus);
-  // const [open, setOpen] = useState(props.open ?? false);
-  const onToggle = () => {
-    setToggleButton(toggleButton === faPlus ? faMinus : faPlus);
-    // setOpen(!open);
-    if (onClick) onClick(eventKey);
-  };
+
+  const onToggle = () => onClick && onClick(eventKey);
+
   return (
     <div
       style={{
@@ -54,7 +50,7 @@ const ExperienceSection = (props: {
         <div className={styles.period}>{period}</div>
         <FontAwesomeIcon
           className={styles.toggleButton}
-          icon={toggleButton}
+          icon={open ? faMinus : faPlus}
           onClick={onToggle}
         />
       </div>
@@ -80,16 +76,42 @@ const ExperienceSection = (props: {
           </div>
           <div
             style={{
-              textAlign: "left",
-              marginTop: "10px",
-              marginBottom: "10px",
+              display: "flex",
+              flexDirection: "row",
             }}
           >
-            {description}
+            <div
+              style={{
+                textAlign: "left",
+                marginTop: "10px",
+                // marginBottom: "10px",
+                width: "85%",
+              }}
+            >
+              {description}
+            </div>
+            <div
+              style={{
+                textAlign: "right",
+                marginTop: "10px",
+                // marginBottom: "10px",
+                width: "15%",
+              }}
+            >
+              <Image
+                src={imageSrc}
+                style={{
+                  width: "100px",
+                  height: "100px",
+                  objectFit: "contain",
+                }}
+                rounded
+              />
+            </div>
           </div>
-          <div style={{ textAlign: "left" }}>
-            {tecnologies.map((tecnology) => (
-              <Tag content={tecnology} />
+          <div style={{ textAlign: "left", marginTop: "20px" }}>
+            {tecnologies.map((tecnology, index) => (
+              <Tag key={index} content={tecnology} />
             ))}
           </div>
         </div>

@@ -17,18 +17,17 @@ export default function Background() {
       //await loadFull(engine);
       await loadSlim(engine);
       //await loadBasic(engine);
-    }).then(() => {
-      setInit(true);
     });
+    // .then(() => {
+    //   setInit(true);
+    // });
   }, []);
-  return init ? (
+  return (
     <Particles
       id="tsparticles"
       className={styles.background}
-      particlesLoaded={async (container) => console.log(container)}
+      // particlesLoaded={async (container) => console.log(container)}
       options={ParticlesConfig}
     />
-  ) : (
-    <></>
   );
 }

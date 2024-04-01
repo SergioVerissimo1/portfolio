@@ -1,0 +1,42 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.textContainer {
+  width: 45%;
+  border: 1px solid red;
+}
+.paragraph {
+  text-align: justify !important;
+  color: white !important;
+  font-family: MyWebFont !important;
+  font-size: 14pt;
+}
+.skillsContainer {
+  width: 46%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid green;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+  }
+  .textContainer {
+    width: 90vw;
+  }
+  .paragraph {
+    font-size: 12pt;
+  }
+  .skillsContainer {
+    width: 90vw;
+  }
+}

@@ -1,11 +1,18 @@
 .title {
-    font-size: 50pt;
-    margin-bottom: 1rem;
-    font-family: MyWebFont;
-    letter-spacing: 5px;
-    font-weight: bold;
-    color: white;
-    border-bottom: 2px solid orange;
-    text-transform: uppercase;
-    margin-bottom: 60px !important;
+  font-size: 50pt;
+  font-family: MyWebFont;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid orange;
+  text-transform: uppercase;
+  margin-bottom: 5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 20pt;
+    margin-bottom: 3rem !important;
+    width: min-content;
   }
+}

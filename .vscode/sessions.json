@@ -1,0 +1,18 @@
+{
+  "$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v10/terminal-keeper.json",
+  "active": "default",
+  "activateOnStartup": true,
+  "sessions": {
+    "default": [
+      {
+        "name": "Portfolio",
+        "color": "terminal.ansiBlue",
+        "autoExecuteCommands": true,
+        "commands": [
+          "npm install",
+          "npm run start"
+        ]
+      }
+    ]
+  }
+}
