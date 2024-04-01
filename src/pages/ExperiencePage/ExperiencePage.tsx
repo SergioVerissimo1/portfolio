@@ -78,7 +78,7 @@ const ExperiencePage = () => {
             period="2016 - 2016"
             address="Seixal, Portugal"
             website="serroalto.com"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Computer maintenance and customer support."
             imageSrc="../../../logos-experience/serroalto.png"
             tecnologies={[
               "Microsoft Access",
