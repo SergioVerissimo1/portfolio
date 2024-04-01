@@ -33,7 +33,7 @@ const ExperiencePage = () => {
             period="2019 - Present"
             address="Caparica, Portugal"
             website="albatrozdigital.pt"
-            description="Developing front-end and mobile app solutions (B2C, B2B) in Travel Tech on React/Next.js framework and Flutter SDK."
+            description="Developing front-end and mobile app solutions (B2C, B2B) on React/Next.js framework and Flutter SDK."
             imageSrc="../../../logos-experience/albatrozdigital.png"
             tecnologies={[
               "React",
