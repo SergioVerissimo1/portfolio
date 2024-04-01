@@ -22,10 +22,21 @@ const ProjectsPage = () => {
           <ProjectSection
             eventKey="0"
             title="Computer Buddy"
-            website={""}
-            description=""
-            tecnologies={["HTML5", "CSS3", "JavaScript"]}
-            imageSrc={""}
+            description="Website for a computer store and back-office inventory and order management software."
+            tecnologies={[
+              "HTML5",
+              "CSS3",
+              "JavaScript",
+              "MySQL",
+              "PHP",
+              "Materialize",
+              "Bootstrap",
+              "jQuery",
+              "AJAX",
+              "Java FX",
+            ]}
+            imageSrc="../../../logos-projects/computer-buddy.png"
+            orientation="left"
           />
         </div>
       }
