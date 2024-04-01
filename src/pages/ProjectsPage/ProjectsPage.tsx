@@ -35,8 +35,16 @@ const ProjectsPage = () => {
               "AJAX",
               "Java FX",
             ]}
-            imageSrc="../../../logos-projects/computer-buddy.png"
+            imageSrc="../../../logos-projects/ComputerBuddy.png"
             orientation="left"
+          />
+          <ProjectSection
+            eventKey="1"
+            title="Social Travel"
+            description="Social network for travelers to share their experiences and travel tips."
+            tecnologies={["Angular", "ASP.net", "SQL"]}
+            imageSrc="../../../logos-projects/SocialTravel.png"
+            orientation="right"
           />
         </div>
       }
