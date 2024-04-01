@@ -42,7 +42,7 @@ const ProjectSection = (props: {
         height: "100px",
         objectFit: "contain",
       }}
-      rounded
+      // rounded
     />
   );
 
