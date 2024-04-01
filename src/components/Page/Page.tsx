@@ -8,6 +8,7 @@ const Page = (props: { id: string; content: ReactElement }) => {
       style={{
         width: "99.1vw",
         // height: "100vh",
+        minHeight: "100vh",
         textAlign: "center",
         // border: "1px solid blue",
         paddingTop: "80px",
