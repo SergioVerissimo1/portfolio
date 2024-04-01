@@ -72,6 +72,7 @@ const ProjectSection = (props: {
         alignItems: "center",
         flexDirection: "row",
         justifyContent: "space-between",
+        width: "100%",
       }}
     >
       {orientation === "left" ? (
