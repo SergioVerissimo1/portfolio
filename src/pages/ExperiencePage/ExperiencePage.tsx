@@ -59,7 +59,7 @@ const ExperiencePage = () => {
             period="2017 - 2017"
             address="Sesimbra, Portugal"
             website="aenrs.pt"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Maintenance and management of computers and networks and customer support."
             imageSrc="../../../logos-experience/aenrs.png"
             tecnologies={[
               "Active Disk Image",
