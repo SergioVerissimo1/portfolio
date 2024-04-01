@@ -1,0 +1,8 @@
+.text {
+  font-size: 14pt;
+  font-family: MyWebFont;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  width: 100%;
+}
