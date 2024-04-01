@@ -42,9 +42,27 @@ const ProjectsPage = () => {
             eventKey="1"
             title="SocialTravel"
             description="Social network for travelers to share their experiences and travel tips."
-            tecnologies={["Angular", "ASP.net", "SQL"]}
+            tecnologies={["Angular", "ASP.net", "SQL Server"]}
             imageSrc="../../../logos-projects/SocialTravel.png"
             orientation="right"
+          />
+          <ProjectSection
+            eventKey="2"
+            title="Localizador de gado"
+            description="IoT project to track cattle in real-time using GPS and LoRa technology."
+            tecnologies={[
+              "HTML5",
+              "CSS3",
+              "JavaScript",
+              "MySQL",
+              "AJAX",
+              "jQuery",
+              "Bootstrap",
+              "Express",
+              "NodeJS",
+            ]}
+            imageSrc="../../../logos-projects/LocalizadordeGado.png"
+            orientation="left"
           />
         </div>
       }
