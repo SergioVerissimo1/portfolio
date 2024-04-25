@@ -3,6 +3,7 @@ import Page from "../../components/Page/Page";
 import styles from "./HomePage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReactTyped } from "react-typed";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const HomePage = () => (
   <Page
@@ -13,8 +14,8 @@ const HomePage = () => (
           SÉRGI
           <span
             onDoubleClick={(e) => {
-              // e.preventDefault;
-              console.log("HELLO");
+              e.preventDefault;
+              // console.log("HELLO");
             }}
           >
             O
@@ -30,10 +31,20 @@ const HomePage = () => (
           />
         </h3>
 
-        <button className={styles.button}>
-          <FontAwesomeIcon className={styles.icon} icon={faDownload} />
-          RESUME
-        </button>
+        <OverlayTrigger
+          placement="top"
+          offset={[0, 10]}
+          overlay={
+            <Tooltip placement="top" className={styles.tooltip}>
+              <strong>AVAILABLE SOON!</strong>
+            </Tooltip>
+          }
+        >
+          <button className={styles.button}>
+            <FontAwesomeIcon className={styles.icon} icon={faDownload} />
+            RESUME
+          </button>
+        </OverlayTrigger>
       </div>
     }
   />

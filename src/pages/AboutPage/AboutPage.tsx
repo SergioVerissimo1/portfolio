@@ -24,13 +24,17 @@ const AboutPage = () => {
             <div className={styles.textContainer}>
               <Subtitle subtitle="Get to know me!" />
               <p className={styles.paragraph}>
-                I'm Sérgio Veríssimo, a full-stack Web Developer based in
-                Sesimbra, Portugal. I'm passionate about creating beautiful,
-                responsive and user-friendly web applications.
+                I'm an enthusiastic full stack developer with a passion for
+                creating seamless web experiences. Proficient in both front-end
+                and back-end technologies, I'm constantly eager to learn and
+                grow in this dynamic field.
               </p>
               <p className={styles.paragraph}>
-                I'm always looking for new challenges and opportunities to learn
-                and grow. Feel free to explore my work and get in touch with me!
+                Solving complex problems and delivering top-notch solutions
+                drive my dedication.
+              </p>
+              <p className={styles.paragraph}>
+                Let's collaborate and build something remarkable together.
               </p>
             </div>
             <div className={styles.skillsContainer}>
