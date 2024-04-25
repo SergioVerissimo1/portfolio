@@ -14,8 +14,8 @@ const HomePage = () => (
           SÉRGI
           <span
             onDoubleClick={(e) => {
-              // e.preventDefault;
-              console.log("HELLO");
+              e.preventDefault;
+              // console.log("HELLO");
             }}
           >
             O
@@ -33,9 +33,10 @@ const HomePage = () => (
 
         <OverlayTrigger
           placement="top"
+          offset={[0, 10]}
           overlay={
-            <Tooltip id="tooltip" color="orange">
-              <strong>COMING SOON!</strong>
+            <Tooltip placement="top" className={styles.tooltip}>
+              <strong>AVAILABLE SOON!</strong>
             </Tooltip>
           }
         >
