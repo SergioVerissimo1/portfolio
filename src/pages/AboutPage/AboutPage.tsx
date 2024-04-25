@@ -24,11 +24,16 @@ const AboutPage = () => {
             <div className={styles.textContainer}>
               <Subtitle subtitle="Get to know me!" />
               <p className={styles.paragraph}>
-                I'm an enthusiastic full stack developer
-                with a passion for creating seamless web experiences. Proficient
-                in both front-end and back-end technologies, I'm constantly
-                eager to learn and grow in this dynamic field. Solving complex
-                problems and delivering top-notch solutions drive my dedication.
+                I'm an enthusiastic full stack developer with a passion for
+                creating seamless web experiences. Proficient in both front-end
+                and back-end technologies, I'm constantly eager to learn and
+                grow in this dynamic field.
+              </p>
+              <p className={styles.paragraph}>
+                Solving complex problems and delivering top-notch solutions
+                drive my dedication.
+              </p>
+              <p className={styles.paragraph}>
                 Let's collaborate and build something remarkable together.
               </p>
             </div>
