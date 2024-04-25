@@ -13,10 +13,10 @@ const HomePage = () => (
         <h1 className={styles.title}>
           SÉRGI
           <span
-            onDoubleClick={(e) => {
-              e.preventDefault;
-              // console.log("HELLO");
-            }}
+            // onDoubleClick={(e) => {
+            //   e.preventDefault;
+            //   console.log("HELLO");
+            // }}
           >
             O
           </span>{" "}
