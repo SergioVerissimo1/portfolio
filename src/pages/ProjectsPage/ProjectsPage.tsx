@@ -35,7 +35,7 @@ const ProjectsPage = () => {
               "AJAX",
               "Java FX",
             ]}
-            imageSrc="../../../logos-projects/ComputerBuddy.png"
+            imageSrc="../../../logos-projects/ComputerBuddyLaptop.png"
             orientation="left"
           />
           <ProjectSection
@@ -43,7 +43,7 @@ const ProjectsPage = () => {
             title="SocialTravel"
             description="Social network for travelers to share their experiences and travel tips."
             tecnologies={["Angular", "ASP.net", "SQL Server", "Entity Framework"]}
-            imageSrc="../../../logos-projects/SocialTravel.png"
+            imageSrc="../../../logos-projects/SocialTravelLaptop.png"
             orientation="right"
           />
           <ProjectSection
@@ -61,7 +61,7 @@ const ProjectsPage = () => {
               "Express",
               "NodeJS",
             ]}
-            imageSrc="../../../logos-projects/LocalizadordeGado.png"
+            imageSrc="../../../logos-projects/LocalizadordeGadoLaptop.png"
             orientation="left"
           />
         </div>

@@ -37,24 +37,13 @@ const ProjectSection = (props: {
   const image = (
     <Image
       src={imageSrc}
-      style={{
-        width: "400px",
-        height: "400px",
-        objectFit: "contain",
-      }}
+      className={styles.image}
       // rounded
     />
   );
 
   const content = (
-    <div
-      style={{
-        textAlign: "left",
-        marginTop: "10px",
-        // marginBottom: "10px",
-        width: "85%",
-      }}
-    >
+    <div className={styles.content}>
       <Subtitle subtitle={title} />
       <Text text={description} />
       <div style={{ textAlign: "left", marginTop: "20px" }}>
@@ -66,15 +55,7 @@ const ProjectSection = (props: {
   );
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "row",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
+    <div className={styles.body}>
       {orientation === "left" ? (
         <div className={styles.left}>{content}</div>
       ) : (
