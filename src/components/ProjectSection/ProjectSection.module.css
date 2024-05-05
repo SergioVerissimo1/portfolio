@@ -4,12 +4,13 @@
   flex-direction: row;
   justify-content: space-between;
   width: 80vw;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  /* height: 50vh; */
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .image {
-  width: 50%;
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -21,13 +22,25 @@
   font-family: MyWebFont;
 }
 
+.textDiv {
+  width: 59.25%;
+}
+
+.imageDiv {
+  width: 39.25%;
+}
+
 @media screen and (max-width: 768px) {
   .body {
     flex-direction: column;
   }
-  .image {
+  .textDiv {
     width: 100%;
+    order: 1;
+  }
+
+  .imageDiv {
+    width: 100%;
+    order: 2;
   }
 }
-
-

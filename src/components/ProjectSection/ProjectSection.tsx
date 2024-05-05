@@ -29,13 +29,22 @@ const ProjectSection = (props: {
 
   const images =
     imageSrc instanceof Array ? (
-      imageSrc.map((iSrc) => (
-        <Image
-          src={iSrc}
-          className={styles.image}
-          // rounded
-        />
-      ))
+      <div
+        style={{
+          display: "flex",
+          alignContent: "space-between",
+          flexDirection: "column",
+          width: `${100 / imageSrc.length}%`,
+        }}
+      >
+        {imageSrc.map((iSrc) => (
+          <Image
+            src={iSrc}
+            className={styles.image}
+            // rounded
+          />
+        ))}
+      </div>
     ) : (
       <Image
         src={imageSrc}
@@ -59,14 +68,18 @@ const ProjectSection = (props: {
   return (
     <div className={styles.body}>
       {orientation === "left" ? (
-        <div className={styles.left}>{content}</div>
+        <div className={styles.textDiv} style={{ textAlign: "left" }}>
+          {content}
+        </div>
       ) : (
-        <div className={styles.right}>{images}</div>
+        <div className={styles.imageDiv}>{images}</div>
       )}
       {orientation === "right" ? (
-        <div className={styles.right}>{content}</div>
+        <div className={styles.textDiv} style={{ textAlign: "right" }}>
+          {content}
+        </div>
       ) : (
-        <div className={styles.left}>{images}</div>
+        <div className={styles.imageDiv}>{images}</div>
       )}
     </div>
   );

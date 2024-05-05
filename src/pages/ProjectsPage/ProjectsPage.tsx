@@ -48,10 +48,12 @@ const ProjectsPage = () => {
               "AJAX",
               "Java FX",
             ]}
-            imageSrc={[
-              "../../../logos-projects/ComputerBuddyLaptop.png",
+            imageSrc={
+              "../../../logos-projects/ComputerBuddyCompleteLaptop.png" /*[
+              "../../../logos-projects/ComputerBuddyCompleteLaptop.png",
               "../../../logos-projects/ComputerBuddyJavaLaptop.png",
-            ]}
+            ]*/
+            }
             orientation="right"
           />
           <ProjectSection
