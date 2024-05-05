@@ -1,13 +1,6 @@
 import { Image } from "react-bootstrap";
 import styles from "./ProjectSection.module.css";
 import Tag from "../Tag/Tag";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLocationDot,
-  faPlus,
-  faMinus,
-  faSquareArrowUpRight,
-} from "@fortawesome/free-solid-svg-icons";
 import Subtitle from "../Subtitle/Subtitle";
 import Text from "../Text/Text";
 
@@ -17,7 +10,7 @@ const ProjectSection = (props: {
   description: string;
   tecnologies: string[];
   open?: boolean;
-  imageSrc: string;
+  imageSrc: string | string[];
   orientation: "left" | "right";
   onClick?: (eventKey: string) => void;
 }) => {
@@ -34,13 +27,22 @@ const ProjectSection = (props: {
 
   const onToggle = () => onClick && onClick(eventKey);
 
-  const image = (
-    <Image
-      src={imageSrc}
-      className={styles.image}
-      // rounded
-    />
-  );
+  const images =
+    imageSrc instanceof Array ? (
+      imageSrc.map((iSrc) => (
+        <Image
+          src={iSrc}
+          className={styles.image}
+          // rounded
+        />
+      ))
+    ) : (
+      <Image
+        src={imageSrc}
+        className={styles.image}
+        // rounded
+      />
+    );
 
   const content = (
     <div className={styles.content}>
@@ -59,12 +61,12 @@ const ProjectSection = (props: {
       {orientation === "left" ? (
         <div className={styles.left}>{content}</div>
       ) : (
-        <div className={styles.right}>{image}</div>
+        <div className={styles.right}>{images}</div>
       )}
       {orientation === "right" ? (
         <div className={styles.right}>{content}</div>
       ) : (
-        <div className={styles.left}>{image}</div>
+        <div className={styles.left}>{images}</div>
       )}
     </div>
   );
