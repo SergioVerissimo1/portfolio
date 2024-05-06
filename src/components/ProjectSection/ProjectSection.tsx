@@ -68,14 +68,14 @@ const ProjectSection = (props: {
   return (
     <div className={styles.body}>
       {orientation === "left" ? (
-        <div className={styles.textDiv} style={{ textAlign: "left" }}>
+        <div className={styles.textDiv} style={{ left: 0 }}>
           {content}
         </div>
       ) : (
         <div className={styles.imageDiv}>{images}</div>
       )}
       {orientation === "right" ? (
-        <div className={styles.textDiv} style={{ textAlign: "right" }}>
+        <div className={styles.textDiv} style={{ right: 0 }}>
           {content}
         </div>
       ) : (
