@@ -3,3 +3,10 @@
   /* border: 1px solid red; */
   padding: 0px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin-top: 50px;
+  }
+}

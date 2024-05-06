@@ -48,11 +48,13 @@ const ExperienceSection = (props: {
       <div className={styles.header} onClick={onToggle}>
         <div className={styles.title}>{title}</div>
         <div className={styles.period}>{period}</div>
-        <FontAwesomeIcon
-          className={styles.toggleButton}
-          icon={open ? faMinus : faPlus}
-          onClick={onToggle}
-        />
+        <div className={styles.toggleButtonDiv}>
+          <FontAwesomeIcon
+            className={styles.toggleButton}
+            icon={open ? faMinus : faPlus}
+            onClick={onToggle}
+          />
+        </div>
       </div>
       <Collapse in={open} timeout={2000}>
         <div className={styles.body}>
@@ -74,30 +76,9 @@ const ExperienceSection = (props: {
               </span>
             </div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-            }}
-          >
-            <div
-              style={{
-                textAlign: "left",
-                marginTop: "10px",
-                // marginBottom: "10px",
-                width: "85%",
-              }}
-            >
-              {description}
-            </div>
-            <div
-              style={{
-                textAlign: "right",
-                marginTop: "10px",
-                // marginBottom: "10px",
-                width: "15%",
-              }}
-            >
+          <div className={styles.content}>
+            <div className={styles.textDiv}>{description}</div>
+            <div className={styles.imageDiv}>
               <Image
                 src={imageSrc}
                 style={{
