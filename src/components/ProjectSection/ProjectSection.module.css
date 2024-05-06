@@ -33,6 +33,7 @@
 @media screen and (max-width: 768px) {
   .body {
     flex-direction: column;
+    width: 85vw;
   }
   .textDiv {
     width: 100%;
@@ -42,5 +43,6 @@
   .imageDiv {
     width: 100%;
     order: 2;
+    margin-top: 40px;
   }
 }
