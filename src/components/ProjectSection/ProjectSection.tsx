@@ -1,13 +1,6 @@
 import { Image } from "react-bootstrap";
 import styles from "./ProjectSection.module.css";
 import Tag from "../Tag/Tag";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLocationDot,
-  faPlus,
-  faMinus,
-  faSquareArrowUpRight,
-} from "@fortawesome/free-solid-svg-icons";
 import Subtitle from "../Subtitle/Subtitle";
 import Text from "../Text/Text";
 
@@ -17,7 +10,7 @@ const ProjectSection = (props: {
   description: string;
   tecnologies: string[];
   open?: boolean;
-  imageSrc: string;
+  imageSrc: string | string[];
   orientation: "left" | "right";
   onClick?: (eventKey: string) => void;
 }) => {
@@ -34,27 +27,34 @@ const ProjectSection = (props: {
 
   const onToggle = () => onClick && onClick(eventKey);
 
-  const image = (
-    <Image
-      src={imageSrc}
-      style={{
-        width: "400px",
-        height: "400px",
-        objectFit: "contain",
-      }}
-      // rounded
-    />
-  );
+  const images =
+    imageSrc instanceof Array ? (
+      <div
+        style={{
+          display: "flex",
+          alignContent: "space-between",
+          flexDirection: "column",
+          width: `${100 / imageSrc.length}%`,
+        }}
+      >
+        {imageSrc.map((iSrc) => (
+          <Image
+            src={iSrc}
+            className={styles.image}
+            // rounded
+          />
+        ))}
+      </div>
+    ) : (
+      <Image
+        src={imageSrc}
+        className={styles.image}
+        // rounded
+      />
+    );
 
   const content = (
-    <div
-      style={{
-        textAlign: "left",
-        marginTop: "10px",
-        // marginBottom: "10px",
-        width: "85%",
-      }}
-    >
+    <div className={styles.content}>
       <Subtitle subtitle={title} />
       <Text text={description} />
       <div style={{ textAlign: "left", marginTop: "20px" }}>
@@ -66,24 +66,20 @@ const ProjectSection = (props: {
   );
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "row",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
+    <div className={styles.body}>
       {orientation === "left" ? (
-        <div className={styles.left}>{content}</div>
+        <div className={styles.textDiv} style={{ left: 0 }}>
+          {content}
+        </div>
       ) : (
-        <div className={styles.right}>{image}</div>
+        <div className={styles.imageDiv}>{images}</div>
       )}
       {orientation === "right" ? (
-        <div className={styles.right}>{content}</div>
+        <div className={styles.textDiv} style={{ right: 0 }}>
+          {content}
+        </div>
       ) : (
-        <div className={styles.left}>{image}</div>
+        <div className={styles.imageDiv}>{images}</div>
       )}
     </div>
   );

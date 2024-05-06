@@ -21,6 +21,19 @@ const ProjectsPage = () => {
           <Text text="Here you will find some of my projects that I have created over the years" />
           <ProjectSection
             eventKey="0"
+            title="SocialTravel"
+            description="Social network for travelers to share their experiences and travel tips."
+            tecnologies={[
+              "Angular",
+              "ASP.net",
+              "SQL Server",
+              "Entity Framework",
+            ]}
+            imageSrc="../../../logos-projects/SocialTravelLaptop.png"
+            orientation="left"
+          />
+          <ProjectSection
+            eventKey="1"
             title="Computer Buddy"
             description="Website for a computer store and back-office inventory and order management software."
             tecnologies={[
@@ -35,15 +48,12 @@ const ProjectsPage = () => {
               "AJAX",
               "Java FX",
             ]}
-            imageSrc="../../../logos-projects/ComputerBuddy.png"
-            orientation="left"
-          />
-          <ProjectSection
-            eventKey="1"
-            title="SocialTravel"
-            description="Social network for travelers to share their experiences and travel tips."
-            tecnologies={["Angular", "ASP.net", "SQL Server", "Entity Framework"]}
-            imageSrc="../../../logos-projects/SocialTravel.png"
+            imageSrc={
+              "../../../logos-projects/ComputerBuddyCompleteLaptop.png" /*[
+              "../../../logos-projects/ComputerBuddyCompleteLaptop.png",
+              "../../../logos-projects/ComputerBuddyJavaLaptop.png",
+            ]*/
+            }
             orientation="right"
           />
           <ProjectSection
@@ -61,7 +71,7 @@ const ProjectsPage = () => {
               "Express",
               "NodeJS",
             ]}
-            imageSrc="../../../logos-projects/LocalizadordeGado.png"
+            imageSrc="../../../logos-projects/LocalizadordeGadoLaptop.png"
             orientation="left"
           />
         </div>
