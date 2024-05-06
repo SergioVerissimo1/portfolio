@@ -7,16 +7,16 @@ export default function NavBar() {
   return (
     <Navbar expand="lg" fixed="top" className={styles.navbar}>
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.navbarToggle}/>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="m-auto">
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.navbarToggle}/> */}
+        {/* <Navbar.Collapse id="basic-navbar-nav"> */}
+          {/* <Nav className="m-auto"> */}
             <NavBarLink name="Home" id="#home" />
             <NavBarLink name="About" id="#about" />
             <NavBarLink name="Experience" id="#experience" />
             <NavBarLink name="Projects" id="#projects" />
             <NavBarLink name="Contact" id="#contact" />
-          </Nav>
-        </Navbar.Collapse>
+          {/* </Nav> */}
+        {/* </Navbar.Collapse> */}
       </Container>
     </Navbar>
   );

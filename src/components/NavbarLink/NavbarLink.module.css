@@ -21,6 +21,7 @@
 @media screen and (max-width: 768px) {
   .link,
   .link_active {
-    font-size: 10pt !important;
+    font-size: 8pt !important;
+    padding: 5px 5px !important;
   }
 }
