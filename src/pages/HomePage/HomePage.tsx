@@ -24,7 +24,7 @@ const HomePage = () => (
         </h1>
         <h3 className={styles.subtitle}>
           <ReactTyped
-            strings={["SOFTWARE ENGINEER, FRONT END AND APP DEVELOPER."]}
+            strings={["FULL STACK SOFTWARE ENGINEER, FRONT-END AND APP DEVELOPER."]}
             typeSpeed={100}
             cursorChar="/"
             startWhenVisible
