@@ -1,9 +1,10 @@
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import Page from "../../components/Page/Page";
-import styles from "./HomePage.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ReactTyped } from "react-typed";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import Page from '../../components/Page/Page';
+import styles from './HomePage.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ReactTyped } from 'react-typed';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { redirectTo } from '../../utils';
 
 const HomePage = () => (
   <Page
@@ -13,25 +14,28 @@ const HomePage = () => (
         <h1 className={styles.title}>
           SÉRGI
           <span
-            // onDoubleClick={(e) => {
-            //   e.preventDefault;
-            //   console.log("HELLO");
-            // }}
+          // onDoubleClick={(e) => {
+          //   e.preventDefault;
+          //   console.log("HELLO");
+          // }}
           >
             O
-          </span>{" "}
+          </span>{' '}
           VERÍSSIMO
         </h1>
         <h3 className={styles.subtitle}>
           <ReactTyped
-            strings={["FULL STACK SOFTWARE ENGINEER, FRONT-END AND APP DEVELOPER."]}
+            strings={['FULL STACK SOFTWARE ENGINEER, FRONT-END AND APP DEVELOPER.']}
             typeSpeed={100}
             cursorChar="/"
             startWhenVisible
           />
         </h3>
-
-        <OverlayTrigger
+        <button className={styles.button} onClick={() => redirectTo('../../../pdf/Sérgio Veríssimo - Resume.pdf')}>
+          <FontAwesomeIcon className={styles.icon} icon={faDownload} />
+          RESUME
+        </button>
+        {/* <OverlayTrigger
           placement="top"
           offset={[0, 10]}
           overlay={
@@ -40,11 +44,12 @@ const HomePage = () => (
             </Tooltip>
           }
         >
-          <button className={styles.button}>
+        
+           <a href={resumePDF} target="_blank" rel="noreferrer">
             <FontAwesomeIcon className={styles.icon} icon={faDownload} />
             RESUME
-          </button>
-        </OverlayTrigger>
+          </a>
+        </OverlayTrigger> */}
       </div>
     }
   />
