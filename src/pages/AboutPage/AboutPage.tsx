@@ -58,6 +58,7 @@ const AboutPage = () => {
               <Skill imageSrc="../../../logos-about/ci-cd.svg" name="CI/CD" />
               <Skill imageSrc="../../../logos-about/php.svg" name="PHP" />
               <Skill imageSrc="../../../logos-about/flutter.svg" name="Flutter" />
+              <Skill imageSrc="../../../logos-about/antdesign.svg" name="Ant Design" />
             </div>
           </div>
         </div>
