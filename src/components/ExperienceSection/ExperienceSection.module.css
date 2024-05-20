@@ -24,7 +24,7 @@
   font-family: MyWebFont;
   font-size: 12pt !important;
   color: #000000;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .title {
   width: 75%;
