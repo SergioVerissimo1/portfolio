@@ -11,7 +11,7 @@ const Page = (props: { id: string; content: ReactElement }) => {
         minHeight: "100vh",
         textAlign: "center",
         // border: "1px solid blue",
-        paddingTop: "80px",
+        // paddingTop: "80px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
