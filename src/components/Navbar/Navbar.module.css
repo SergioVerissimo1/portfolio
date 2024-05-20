@@ -1,13 +1,25 @@
 .navbar {
-  background: rgb(0, 0, 0, 0.0);
-  /* border: 1px solid red; */
+  background: rgb(0, 0, 0, 0);
   padding: 0px;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
 }
-
+.navbarRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45vw;
+  /* border: 1px solid red; */
+}
 
 @media screen and (max-width: 768px) {
   .navbar {
     margin-top: 50px;
+  }
+  .navbarRow {
+    width: 90%;
   }
 }
