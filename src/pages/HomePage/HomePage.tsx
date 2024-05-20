@@ -9,6 +9,7 @@ import { redirectTo } from '../../utils';
 const HomePage = () => (
   <Page
     id="home"
+    css={false}
     content={
       <div>
         <h1 className={styles.title}>

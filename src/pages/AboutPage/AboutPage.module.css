@@ -32,6 +32,7 @@
   }
   .textContainer {
     width: 90vw;
+    margin-bottom: 40px;
   }
   .paragraph {
     font-size: 12pt;
