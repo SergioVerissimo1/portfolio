@@ -5,7 +5,7 @@ import NavBarLink from "../NavbarLink/NavbarLink";
 
 export default function NavBar() {
   return (
-    <Navbar expand="lg" fixed="top" className={styles.navbar}>
+    <Navbar expand="lg" /*fixed="top"*/ className={styles.navbar}>
       <Container>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.navbarToggle}/> */}
         {/* <Navbar.Collapse id="basic-navbar-nav"> */}
